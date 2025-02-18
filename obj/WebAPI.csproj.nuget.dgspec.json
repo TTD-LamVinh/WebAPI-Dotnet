@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[2.4.0, )"
             },
+            "MySqlConnector.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.0, )"

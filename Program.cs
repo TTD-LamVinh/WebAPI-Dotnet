@@ -15,8 +15,8 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Services.AddScoped<ITodoService, TodoItemService>();
 builder.Services.AddDbContext<TodoContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("TodoContext"), 
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("TodoContext"))));
+    options.UseMySql(builder.Configuration.GetConnectionString("Default"), 
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("Default"))));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

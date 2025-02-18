@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CEC2bDVynLk=",
+  "dgSpecHash": "mUSIZ63rlpY2jRO8XiuzrWsBeydxn44IqScQGwha+aSfl5754MYlTpq0/ObFdU0n9A3u0g7lw3CLoSGGsvcJxQ==",
   "success": true,
   "projectFilePath": "D:\\TTDesign\\Projects\\WebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\lamtr\\.nuget\\packages\\mysql.data\\8.0.28\\mysql.data.8.0.28.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\mysql.entityframeworkcore\\6.0.0\\mysql.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\lamtr\\.nuget\\packages\\mysqlconnector.dependencyinjection\\2.4.0\\mysqlconnector.dependencyinjection.2.4.0.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.0\\pomelo.entityframeworkcore.mysql.6.0.0.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
@@ -46,6 +47,7 @@
     "C:\\Users\\lamtr\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
+    "C:\\Users\\lamtr\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\lamtr\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
