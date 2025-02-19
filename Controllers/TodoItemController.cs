@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 using WebAPI.DTOs;
 using WebAPI.Models;
 using WebAPI.Service;
@@ -20,16 +19,40 @@ public class TodoItemController
     }
     
     [HttpGet]
-    public List<TodoItemDto> GetTodoItems()
+    public ActionResult<List<TodoItemDto>> GetTodoItems()
     {
         _logger.Log(LogLevel.Information, "Getting todo items");
-        return _todoService.GetTodoItems();
+        return new OkObjectResult(_todoService.GetTodoItems());
     }
     
     [HttpGet("/{id}")]
-    public TodoItemDto GetTodoItem(string id)
+    public ActionResult<TodoItemDto> GetTodoItem(string id)
     {
         _logger.Log(LogLevel.Information, "Getting todo item");
-        return _todoService.GetTodoItem(long.Parse(id));
+        return new OkObjectResult(_todoService.GetTodoItem(long.Parse(id)));
+    }
+    
+    [HttpPost]
+    public ActionResult<string> CreateTodoItem(TodoItemDto todoItem)
+    {
+        _logger.Log(LogLevel.Information, "Creating todo item");
+        _todoService.CreateTodoItem(todoItem);
+        return new OkObjectResult("Todo item created");
+    }
+    
+    [HttpPut]
+    public ActionResult<string> UpdateTodoItem(TodoItemDto todoItem)
+    {
+        _logger.Log(LogLevel.Information, "Updating todo item");
+        _todoService.UpdateTodoItem(todoItem);
+        return new OkObjectResult("Todo item updated");
+    }
+    
+    [HttpDelete("/{id}")]
+    public ActionResult<string> DeleteTodoItem(string id)
+    {
+        _logger.Log(LogLevel.Information, "Deleting todo item");
+        _todoService.DeleteTodoItem(long.Parse(id));
+        return new OkObjectResult("Todo item deleted");
     }
 }
